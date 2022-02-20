@@ -1,7 +1,174 @@
-body{
-    background-color: grey;
+*{
+  margin: 0;
+  padding: 0;
+  
 }
-.card{
+body{
+    background: linear-gradient(45deg, var(--color-yellow), var(--color-orange));
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+/* Variáveis */
+:root{
+    --color-orange: #F24906;
+    --color-black: rgb(26 30 33);
+    --color-yellow: #EEC170;
+  }
+.cabecalho{
+    /* position: fixed; */
+}
+.container-fluid{
+    background-color: rgb(26 30 33);
+    background-size: cover;
+}
+#navbarNav{
+    background-color: var(--color-black);
+}
+.navbar-nav{
+    position: absolute;
+    background-color: var(--color-orange);
+    border-radius: 2%;
+}
+.navbar-toggler{
+    background-color: var(--color-black);
+}
+.cabecalho-image{
+    border-radius: 70%;
+    width: 120px;
+    padding: 10px;
+    box-shadow: 4px 5px 4px  var(--color-orange);
+}
+.estudante{
+    align-items: center;
+    border-radius: 15%;
+    padding-top: 200px;
+}
+.conteudo{
+    margin-bottom: 48px;
+    border-top: 3px solid var(--color-black);
+}
+.conteudo-inicial{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 200px;
+}
+.conteudo-inicial-escrito-titulo{
+    font-size: 50px;
+    box-shadow: 7px 8px 7px var(--color-black);
+    font-family: 'Helvética';
+    font-weight: 400;
+    border-radius: 5%;
+    color: rgb(26 30 33);
+}
+.conteudo-inicial-escrito-subtitulo{
+    font-family: 'Helvética';
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+.conteudo-inicial-image{
+    border-radius: 10%;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+
+}
+.conteudo-dois{
+    margin-top: 300px;
+    margin-bottom: 20px;
+    border-top: 2px solid var(--color-black);
+    text-align: center;
+}
+.conteudo-dois-escrito-titulo{
+    font-size: 50px;
+    font-family: 'Helvética';
+    font-weight: 400;
+    border-radius: 5%;
+    color: rgb(26 30 33);
+}
+.conteudo-dois-escrito-texto{
+    font-size: 30px;
+    font-family: 'Helvética';
+    font-weight: 400;
+    color:  var(--color-orange);
+    padding: 15%;
+    padding-top: 2%;
+    padding-bottom: 0%;
+    background-color: var(--color-black);
+}
+.conteudo-tres{
+    margin-top: 400px;
+    margin-bottom: 70px;
+    border-top: 2px solid var(--color-black);
+    text-align: center;
+}
+.conteudo-tres-escrito-titulo{
+    font-size: 50px;
+    font-family: 'Helvética';
+    font-weight: 400;
+    border-radius: 5%;
+    color: var(--color-black);
+}
+.conteudo-tres-escrito-texto{
+    font-size: 30px;
+    font-family: 'Helvética';
+    font-weight: 400;
+    color:  var(--color-orange);
+    padding: 15%;
+    padding-top: 2%;
+    padding-bottom: 0%;
+    background-color: var(--color-black);
+}
+.icones-tecnologias{
+    padding-top: 5%;
+    padding-bottom: 0%;
+    color:  var(--color-orange);
+}
+.conteudo-quatro{
+    margin-top: 400px;
+    margin-bottom: 70px;
+    border-top: 2px solid var(--color-black);
+    text-align: center;
+    padding-bottom: 300px;
+}
+.conteudo-quatro-escrito-titulo{
+    font-size: 50px;
+    font-family: 'Helvética';
+    font-weight: 400;
+    border-radius: 5%;
+    color: var(--color-black);
+    padding-bottom: 25px;
+}
+.contato-geral{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+}
+.contato-titulo{
+    font-size: 50px;
+    font-family: 'Helvética';
+    font-weight: 400;
+    border-radius: 5%;
+    color: var(--color-black);
+}
+/*css rodape e cards de contato*/
+.rodape{
+    padding: 32px;
+    margin-bottom: 48px;
+    border-top: 2px solid var(--color-black);
+    display: flex;
+    flex-direction: row;
+    padding: 80px;
+    text-align: center;
+    justify-content: center;
+}.card{
     font-size: 0;
     font: right;
+    color: var(--color-black);
+    text-align: center;  
 }
+/*efeito de elevação nas imagens da parte de tecnologias*/
+#efeitoE{position:relative;top:0;padding:4px;
+    transition: all .2s ease-in-out}
+#efeitoE:hover{top:-4px;box-shadow:0 4px 3px var(--color-yellow)}

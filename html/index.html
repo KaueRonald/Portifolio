@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-BR" style="overflow-x: hidden;">
+  
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,53 +10,141 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!----css global---->
     <link rel="stylesheet" type="text/css" href="../css/index.css">
-    <title>Document</title>
+    <title>Portifólio</title>
 </head>
 
 <body>
-    <header>
-        <img src="" alt="Logo Kauê Ronald" >
-        <nav>
-            <a>Sobre mim</a>
-            <a>Tecnologias que domino</a>
-            <a>Projetos que fiz/faço</a>
-        </nav>
+  <header class="cabecalho">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img class="cabecalho-image" src="../img/Logo.jpg" alt="Logo Kauê Ronald" width="120px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#Sobremim">Sobre mim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tecnologias">Tecnologias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projetos">Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contatos">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </span>
+    </div>
+  </nav>
     </header>
-    <main>
-        <section>
-            <div>
-                <h1>Portifólio de Kauê Ronald</h1>
-                <h2>Tenho 19 anos e sou apaixonado por tecnologia, futebol e cultura geek.</h2>
+    <main class="conteudo">
+        <section class="conteudo-inicial">
+            <div class="conteudo-inicial-escrito">
+                <h1 class="conteudo-inicial-escrito-titulo">Portifólio de Kauê Ronald</h1>
+                <p class="conteudo-inicial-escrito-subtitulo">Trainee e Desenvolvedor da Loopis Júnior - Soluções Tecnológicas</p>
+                <!--<img class="estudante"src="../img/estudante.jpg" alt="Estudante" width="250px">-->
             </div>
-            <img src="../img/PerfilKaue.jpg" alt="Perfil Kauê Ronald" width="120px">
+            <img class="conteudo-inicial-image"src="../img/PerfilKaue.jpg" alt="Perfil Kauê Ronald" width="150px">
+            
+        </section>
+        
+        <section class="conteudo-dois">
+          <div class="conteudo-dois-escrito">
+          <h1 id="Sobremim" class="conteudo-dois-escrito-titulo">Sobre mim</h1>
+          <p class="conteudo-dois-escrito-texto">Me chamo <strong><u>Kauê Ronald Silva Nascimento</u></strong>, tenho 19 anos e curso Análise e Desenvolvimento de Sistemas
+            no IFPB, campus Cajazeiras-PB, sou apaixonado pela área da tecnologia e me identifiquei com o curso que estou.
+            Atualmente atuo na área de projetos da LOOPIS e busco desenvolver minhas habilidades em programação, tenho conhecimento
+            em algumas tecnologias que vou apresentar mais abaixo.
+          </p>
+        </div>
+        </section>
+
+        <section class="conteudo-tres">
+          <div class="conteudo-tres-escrito">
+          <h1 id="tecnologias" class="conteudo-tres-escrito-titulo">Tecnologias</h1>
+          <p class="conteudo-tres-escrito-texto">As tecnologias que domino ou tenho um pouco de conhecimento estão descritas com sua logo abaixo, pretendo me aperfeiçoar
+            em algumas delas e ter conhecimento sobre outras, e será atualizado toda vez que um novo conhecimento for adquirido.
+          </p>
+          <div class="icones-tecnologias">
+          <img src="https://img.icons8.com/ios-filled/100/000000/javascript-logo.png" id="efeitoE"/>
+          <-JavaScript
+          <img src="https://img.icons8.com/external-tal-revivo-regular-tal-revivo/100/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-regular-tal-revivo.png" id="efeitoE"/>
+          <-React
+          <img src="https://img.icons8.com/external-tal-revivo-filled-tal-revivo/100/000000/external-nodejs-is-an-open-source-cross-platform-javascript-run-time-environment-logo-filled-tal-revivo.png" id="efeitoE"/>
+          <-NodeJS
+          <img src="https://img.icons8.com/ios-filled/100/000000/html-5--v1.png" id="efeitoE"/>
+          <-HTML5
+          <img src="https://img.icons8.com/ios/100/000000/css3.png" id="efeitoE"/>
+          <-CSS3
+          <img src="https://img.icons8.com/windows/100/000000/java-coffee-cup-logo.png" id="efeitoE"/>
+          <-JAVA
+          <img src="https://img.icons8.com/ios-filled/100/000000/git.png" id="efeitoE"/>
+          <-git
+          <img src="https://img.icons8.com/ios-glyphs/100/000000/github.png" id="efeitoE"/>
+          <-GitHub
+        </div>
+        </div>
+        </section>
+
+        <section class="conteudo-quatro">
+          <div class="conteudo-quatro-escrito">
+          <h1 id="projetos" class="conteudo-quatro-escrito-titulo">Projetos</h1>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="../img/projeto1.0.png" class="card-img-top" alt="Projeto Loopis">
+              <div class="card-body">
+                <h5 class="card-title">Desafio LOOPIS</h5>
+                <button type="button" class="btn btn-outline-dark" href="https://github.com/KaueRonald/Desafio-Loopis">Acesse aqui!</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="../img/projeto2.0.png" class="card-img-top" alt="...">
+              <div class="card-body" >
+                <h5 class="card-title" >Site Rocket League</h5>
+                <button type="button" class="btn btn-outline-dark" href="https://github.com/KaueRonald/Site-Rocket-League-1-Per-odo">Acesse aqui!</button>
+              </div>
+            </div>
+          </div>
+        </div>
         </section>
     </main>
 </body>
-<footer>
-    <div class="card" style="width: 8rem;">
-        <img src="../img/instagram-logo.png" class="card-img-top" alt="Logo do Instagram">
-        <div class="card-body">
-          <h5 class="card-title">Instagram</h5>
-          <p class="card-text">Aqui está o meu instagram pessoal.</p>
-          <a href="#" class="btn btn-primary">ir para o instagram</a>
-        </div>
-      </div>
-      <div class="card" style="width: 8rem;">
-        <img src="../img/linkedin-Logo.png" class="card-img-top" alt="Logo do Linkedin">
-        <div class="card-body">
-          <h5 class="card-title">Linkedin</h5>
-          <p class="card-text">Aqui está o meu Linkedin.</p>
-          <a href="#" class="btn btn-primary">ir para o Linkedin</a>
-        </div>
-      </div>
-      <div class="card" style="width: 8rem;">
-        <img src="../img/github-logo.png" class="card-img-top" alt="Logo do Github">
-        <div class="card-body">
-          <h5 class="card-title">Github</h5>
-          <p class="card-text">Aqui está o meu Github.</p>
-          <a href="#" class="btn btn-primary">ir para o Github</a>
-        </div>
-      </div>
+<footer class="bg-dark text-center text-white" id="contatos">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/profile.php?id=100007351698073" role="button">
+        <i class="fab fa-facebook-f"><img src="https://img.icons8.com/material-outlined/24/000000/facebook.png"/></i></a>
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://mail.google.com/mail/u/0/#inbox/FMfcgxwHMPfbsvBSPNLtZqfRTfDdRJGW?compose=CllgCJvlHXqtZgSljPcvwtlZfdBnWWkqJnKtMsLRnvqgJlfCKWkvzslSDZqsqKwJRqFdrdvjdvq" role="button">
+        <i class="fab fa-google"><img src="https://img.icons8.com/ios-glyphs/24/000000/gmail-login.png"/></i></a>
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/kaueronald_/" role="button">
+        <i class="fab fa-instagram"><img src="https://img.icons8.com/material-outlined/24/000000/instagram-new--v1.png"/></i></a>
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/kau%C3%AA-ronald-981a8a216/" role="button">
+        <i class="fab fa-linkedin-in"><img src="https://img.icons8.com/material-outlined/24/000000/linkedin--v1.png"/></i></a>
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/KaueRonald" role="button">
+        <i class="fab fa-github"><img src="https://img.icons8.com/material-outlined/24/000000/github.png"/></i></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright:
+    <a class="text-white" href="../img/PerfilKaue.jpg">Kauê Ronald</a>
+  </div>
 </footer>
 
 </html>
